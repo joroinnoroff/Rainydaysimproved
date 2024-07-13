@@ -51,11 +51,11 @@ const AllProducts = () => {
       {products.length > 0 ? (
         <div className="h-full w-full flex flex-col gap-5 mt-10">
           {products.map((product) => (
-            <div key={product.id} className="grid grid-cols-1 lg:grid-cols-2 border-b p-3 gap-3 place-self-center">
+            <div key={product.id} className="grid grid-cols-1 lg:grid-cols-2 border-b p-3 gap-3 mb-4">
               <div className="flex flex-col gap-6">
                 <h1 className="font-bold text-3xl">{product.title}</h1>
                 <p>{product.description}</p>
-                <span className="">{product.tags}</span>
+
                 <span>{product.price}$</span>
                 <button onClick={() => openModal(product)} className="border px-5 py-5 rounded w-4/5">View Details</button>
               </div>
